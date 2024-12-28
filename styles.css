@@ -1,0 +1,73 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 20px;
+  background: linear-gradient(120deg, #ff7eb3, #ff758c);
+  color: white;
+}
+
+.hero .info h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.hero .info p {
+  font-size: 1.2rem;
+}
+
+.hero .photo img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.video {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.video h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+video {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Handwritten Text Animation */
+@keyframes handwriting {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+#animated-name {
+  animation: handwriting 2s ease-in-out;
+}
